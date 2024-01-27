@@ -110,9 +110,9 @@ http POST :8080/users</li>
    
     
     {
-  	  "senderId": 2,
-      "receiverId": 1,
-      "value": 53 
+  	   "senderId": 1,
+       "receiverId": 2,
+       "value": 53 
     }
   <p>Reponse:</p>
   
@@ -120,24 +120,24 @@ http POST :8080/users</li>
         "id": 1,
         "amount": 53,
         "sender": {
-            "id": 2,
-            "firsName": "Stheven",
-            "lastName": "Soares",
-            "document": "12345610",
-            "email": "sthevensoares@example.com",
-            "password": "senha",
-            "balance": 112.00,
-            "userType": "MERCHANT"
-        },
-        "receiver": {
             "id": 1,
             "firsName": "Julio",
             "lastName": "Alves",
             "document": "12345641",
             "email": "julioalves@example.com",
             "password": "senha",
-            "balance": 133.00,
+            "balance": 27.00,
             "userType": "COMMOM"
+        },
+        "receiver": {
+           "id": 2,
+           "firsName": "Stheven",
+           "lastName": "Soares",
+           "document": "12345610",
+           "email": "sthevensoares@example.com",
+           "password": "senha",
+           "balance": 213.00,
+           "userType": "MERCHANT"
         },
         "timestamp": "2024-01-27T11:13:55.2775202"
     }
