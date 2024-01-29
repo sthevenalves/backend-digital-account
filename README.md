@@ -21,6 +21,7 @@
    <ul>
      <li>Para ambos tipos de usuário, o cadastro é realizado com primeiro e último nome, documento(CPF/CNPJ), e-mail, senha, tipo de usuário e saldo. O e-mail e documento são 
        únicos no sistema.</li>
+     <li>Usuários e transferências são entidades únicas, onde cada um realiza sua função</li>
      <li>Usuários podem enviar dinheiro (efetuar transferência) para lojistas e entre usuários.</li>
      <li>Lojistas só recebem transferências, não enviam dinheiro para ninguém.</li>
      <li>Usuários só podem enviar dinheiro se houver saldo.</li>
