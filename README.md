@@ -5,10 +5,9 @@
  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
  
  <P>Para desenvolver esse projeto, foi usado Java, Spring Boot e H2 como database</P>
- <p>Este é um projeto de desafio Backend do <a href="https://picpay.com/">PicPay</a>. O objetivo do projeto é realizar transferências entre duas entidades, 
+ <p>O objetivo deste projeto é realizar transferências entre duas entidades, 
    comuns(COMMOM) e lojistas(MERCHANT).</p>
-   <p>Acesso para a proposta do <a href="https://github.com/PicPay/picpay-desafio-backend">Desafio Back-end PicPay</a></p>
-  
+ 
    <h2>Sumário</h2>
 <ul>
   <li><a href="#func">Funcionalidades</li>
