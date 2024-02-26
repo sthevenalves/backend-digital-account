@@ -1,4 +1,4 @@
-<h1>Picpay Simplificado</h1>
+<h1>Conta Digital</h1>
 
  ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
  ![Spring](https://img.shields.io/badge/Spring-6DB33F.svg?style=for-the-badge&logo=Spring&logoColor=white)
