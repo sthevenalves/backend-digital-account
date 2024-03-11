@@ -21,7 +21,7 @@ public class TransactionService {
     @Autowired
     private TransactionRepository repository;
     @Autowired
-    private RestTemplate restTemplate;
+    private authorizationService authService;
     @Autowired
     private NotificationService notificationService;
 
@@ -31,7 +31,7 @@ public class TransactionService {
 
         userService.validateTransaction(sender, transaction.value());
 
-        boolean isAuthorized = this.authorizeTransaction(sender, transaction.value());
+        boolean isAuthorized = this.authService.authorizeTransaction(sender, transaction.value());
         if(!isAuthorized){
             throw new Exception("Transação não autorizada");
         }
@@ -54,13 +54,5 @@ public class TransactionService {
         return newTransaction;
     }
 
-    public boolean authorizeTransaction(User sender, BigDecimal value){
-        ResponseEntity<Map> authorizationReponse = restTemplate.
-                getForEntity("https://run.mocky.io/v3/5794d450-d2e2-4412-8131-73d0293ac1cc", Map.class);
 
-            if(authorizationReponse.getStatusCode() == HttpStatus.OK){
-                String message = (String)authorizationReponse.getBody().get("message");
-                return "Autorizado".equalsIgnoreCase(message);
-            }else return false;
-    }
 }
