@@ -27,13 +27,14 @@
      <li>No recebimento de pagamento, o usuário recebe uma notificação de envio de transferência</li>
    </ul>
 
-   <h2 id="pratic">Práticas adotadas</h2>
+   <h2 id="pratic">Metodologias e Práticas Implementadas</h2>
 <ul>
 <li>Design Patterns, SOLID
 <li>API REST
 <li>Consultas com Spring Data JPA
 <li>Injeção de Dependências
 <li>Tratamento de respostas de erro
+ <li>Testes Unitários</li>
 </ul>
 
 <h2 id="instalacao">Instalação</h2>
