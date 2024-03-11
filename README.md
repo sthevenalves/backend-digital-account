@@ -1,14 +1,13 @@
-<h1>Picpay Simplificado</h1>
+<h1>Conta Digital</h1>
 
  ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
  ![Spring](https://img.shields.io/badge/Spring-6DB33F.svg?style=for-the-badge&logo=Spring&logoColor=white)
  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
  
  <P>Para desenvolver esse projeto, foi usado Java, Spring Boot e H2 como database</P>
- <p>Este é um projeto de desafio Backend do <a href="https://picpay.com/">PicPay</a>. O objetivo do projeto é realizar transferências entre duas entidades, 
-   comuns e lojistas.</p>
-   <p>Acesso para a proposta do <a href="https://github.com/PicPay/picpay-desafio-backend">Desafio Back-end PicPay</a></p>
-  
+ <p>O objetivo deste projeto é realizar transferências entre duas entidades, 
+   comuns(COMMOM) e lojistas(MERCHANT).</p>
+ 
    <h2>Sumário</h2>
 <ul>
   <li><a href="#func">Funcionalidades</li>
@@ -21,6 +20,7 @@
    <ul>
      <li>Para ambos tipos de usuário, o cadastro é realizado com primeiro e último nome, documento(CPF/CNPJ), e-mail, senha, tipo de usuário e saldo. O e-mail e documento são 
        únicos no sistema.</li>
+     <li>Usuários e transferências são entidades únicas, onde cada um realiza sua função</li>
      <li>Usuários podem enviar dinheiro (efetuar transferência) para lojistas e entre usuários.</li>
      <li>Lojistas só recebem transferências, não enviam dinheiro para ninguém.</li>
      <li>Usuários só podem enviar dinheiro se houver saldo.</li>
@@ -110,9 +110,9 @@ http POST :8080/users</li>
    
     
     {
-  	  "senderId": 2,
-      "receiverId": 1,
-      "value": 53 
+  	   "senderId": 1,
+       "receiverId": 2,
+       "value": 53 
     }
   <p>Reponse:</p>
   
@@ -120,24 +120,24 @@ http POST :8080/users</li>
         "id": 1,
         "amount": 53,
         "sender": {
-            "id": 2,
-            "firsName": "Stheven",
-            "lastName": "Soares",
-            "document": "12345610",
-            "email": "sthevensoares@example.com",
-            "password": "senha",
-            "balance": 112.00,
-            "userType": "MERCHANT"
-        },
-        "receiver": {
             "id": 1,
             "firsName": "Julio",
             "lastName": "Alves",
             "document": "12345641",
             "email": "julioalves@example.com",
             "password": "senha",
-            "balance": 133.00,
+            "balance": 27.00,
             "userType": "COMMOM"
+        },
+        "receiver": {
+           "id": 2,
+           "firsName": "Stheven",
+           "lastName": "Soares",
+           "document": "12345610",
+           "email": "sthevensoares@example.com",
+           "password": "senha",
+           "balance": 213.00,
+           "userType": "MERCHANT"
         },
         "timestamp": "2024-01-27T11:13:55.2775202"
     }
