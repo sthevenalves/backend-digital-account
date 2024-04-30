@@ -1,4 +1,4 @@
-<h1>Conta Digital</h1>
+<h1>API de Pagamentos Simplificados</h1>
 
  ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
  ![Spring](https://img.shields.io/badge/Spring-6DB33F.svg?style=for-the-badge&logo=Spring&logoColor=white)
@@ -7,6 +7,7 @@
  <P>Para desenvolver esse projeto, foi usado Java, Spring Boot e H2 como database</P>
  <p>O objetivo deste projeto é realizar transferências entre duas entidades, 
    comuns(COMMOM) e lojistas(MERCHANT).</p>
+ <p>A API desenvolvida foi retirada do desafio PicPay Backend</p>
  
    <h2>Sumário</h2>
 <ul>
